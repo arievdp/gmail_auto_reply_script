@@ -17,3 +17,5 @@ function autoReply() {
 function doGet() {
   return ContentService.createTextOutput("");
 }
+
+// Modified code from: https://memberfix.rocks/gmail-office-hours/
