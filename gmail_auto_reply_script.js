@@ -5,7 +5,7 @@ function autoReply() {
   const date = new Date()
   const day = date.getDay()
   // const hour = date.getHours()
-  if (daysToSendMessage.indexOf(day)) {
+  if (daysToSendMessage.includes(day)) {
     const timeFrom = Math.floor(date.valueOf()/1000) - 60 * interval
     const threads = GmailApp.search('is:inbox after:' + timeFrom)
     for (let i = 0; i < threads.length; i++) {
